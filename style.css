@@ -13,14 +13,12 @@ src: url("chartfont/ProximaNovaCondSbold.otf")
 
 body{font-family: "ProximaNovaCondReg","Franklin Gothic", "ITC Franklin Gothic", Arial, sans-serif;}
 
+svg{position: absolute;top: 44px;background: rgb(245,245,245);}
+
 text {font-size: 10px;fill: rgb(89,89,89);}
 
 #buffer{
 margin: 11px;
-}
-button{
-position: absolute;
-width: 190px;
 }
 
 .datalabels{
@@ -34,15 +32,13 @@ font-size: 20px;
 fill: rgb(89,89,89);
 }
 
-svg{position: absolute;top: 44px;background: rgb(245,245,245);}
+.axis path,
+.axis line {fill: none;stroke: rgb(89,89,89);shape-rendering: crispEdges;}
 
-#counts {
-    position:absolute;
-    top:175px;
-    left: 435px;
-    width: 180px;
-    background: rgb(245,245,245);
-    padding: 0 5px 0 8px;
+
+button{
+position: absolute;
+width: 190px;
 }
 
 #titletext {
@@ -58,6 +54,7 @@ svg{position: absolute;top: 44px;background: rgb(245,245,245);}
     color: rgb(255,255,255);
 }
 
+
 #introtext {
     position:absolute;
     background-color: rgb(89,89,89);
@@ -72,6 +69,32 @@ svg{position: absolute;top: 44px;background: rgb(245,245,245);}
     color: rgb(255,255,255);
 }
 
+#calculator{
+    font-family: "ProximaNovaCondReg","Franklin Gothic", "ITC Franklin Gothic", Arial, sans-        serif;
+    position:absolute;
+    left: 435px;
+    top: 101px;
+    font-size: 18px;
+    color: rgb(30,30,30);
+}
+
+input {
+    font-family: "ProximaNovaCondBold","Franklin Gothic", "ITC Franklin Gothic", Arial, sans-       serif;
+    font-size: 21px;
+    border:rgb(120,120,120) solid 1px;
+    width: 187px;
+    height: 24px;
+}
+
+#counts {
+    position:absolute;
+    top:175px;
+    left: 435px;
+    width: 180px;
+    background: rgb(245,245,245);
+    padding: 0 5px 0 8px;
+}
+
 #usetitle{
 font-family: "ProximaNovaCondSbold","Franklin Gothic Medium", "Franklin Gothic", "ITC Franklin Gothic", Arial, sans-serif;
 }
@@ -84,26 +107,3 @@ font-size: 18px;
 font-family: "ProximaNovaCondBold","Franklin Gothic Medium", "Franklin Gothic", "ITC Franklin Gothic", Arial, sans-serif;
 font-size: 18px;
 }
-
-input {
-    font-family: "ProximaNovaCondBold","Franklin Gothic", "ITC Franklin Gothic", Arial, sans-serif;
-    font-size: 21px;
-    border:rgb(120,120,120) solid 1px;
-    width: 187px;
-    height: 24px;
-}
-
-
-.axis path,
-.axis line {fill: none;stroke: rgb(89,89,89);shape-rendering: crispEdges;}
-	
-#calculator{
-    font-family: "ProximaNovaCondReg","Franklin Gothic", "ITC Franklin Gothic", Arial, sans-serif;
-    position:absolute;
-    left: 435px;
-    top: 101px;
-    font-size: 18px;
-    color: rgb(30,30,30);
-}
-
-#title {font-family: "ProximaNovaCondBold","Franklin Gothic Medium", "Franklin Gothic", "ITC Franklin Gothic", Arial, sans-serif;font-size: 23px;}
