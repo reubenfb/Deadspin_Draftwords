@@ -1,0 +1,109 @@
+@font-face{
+font-family: "ProximaNovaCondReg";
+src: url("chartfont/ProximaNovaCondReg.otf")
+}
+@font-face{
+font-family: "ProximaNovaCondBold";
+src: url("chartfont/ProximaNovaCondBold.otf")
+}
+@font-face{
+font-family: "ProximaNovaCondSBold";
+src: url("chartfont/ProximaNovaCondSbold.otf")
+}
+
+body{font-family: "ProximaNovaCondReg","Franklin Gothic", "ITC Franklin Gothic", Arial, sans-serif;}
+
+text {font-size: 10px;fill: rgb(89,89,89);}
+
+#buffer{
+margin: 11px;
+}
+button{
+position: absolute;
+width: 190px;
+}
+
+.datalabels{
+font-size: 20px;
+fill: rgb(89,89,89);
+}
+
+.label{
+font-family: "ProximaNovaCondSbold","Franklin Gothic Medium", "Franklin Gothic", "ITC Franklin Gothic", Arial, sans-serif;
+font-size: 20px;
+fill: rgb(89,89,89);
+}
+
+svg{position: absolute;top: 44px;background: rgb(245,245,245);}
+
+#counts {
+    position:absolute;
+    top:175px;
+    left: 435px;
+    width: 180px;
+    background: rgb(245,245,245);
+    padding: 0 5px 0 8px;
+}
+
+#titletext {
+    position:absolute;
+    background-color: rgb(54,72,106);
+    height: 36px;
+    width: 416px;
+    text-align: center;
+    font-family: "ProximaNovaCondSbold","Franklin Gothic Medium", "Franklin Gothic", "ITC Franklin Gothic", Arial, sans-serif;
+    vertical-align: middle;
+    line-height: 36px;
+    font-size: 27px;
+    color: rgb(255,255,255);
+}
+
+#introtext {
+    position:absolute;
+    background-color: rgb(89,89,89);
+    left: 435px;
+    top: 56px;
+    height: 32px;
+    width: 190px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 32px;
+    font-size: 25px;
+    color: rgb(255,255,255);
+}
+
+#usetitle{
+font-family: "ProximaNovaCondSbold","Franklin Gothic Medium", "Franklin Gothic", "ITC Franklin Gothic", Arial, sans-serif;
+}
+
+#blackcount{
+font-family: "ProximaNovaCondBold","Franklin Gothic Medium", "Franklin Gothic", "ITC Franklin Gothic", Arial, sans-serif;
+font-size: 18px;
+}
+#whitecount{
+font-family: "ProximaNovaCondBold","Franklin Gothic Medium", "Franklin Gothic", "ITC Franklin Gothic", Arial, sans-serif;
+font-size: 18px;
+}
+
+input {
+    font-family: "ProximaNovaCondBold","Franklin Gothic", "ITC Franklin Gothic", Arial, sans-serif;
+    font-size: 21px;
+    border:rgb(120,120,120) solid 1px;
+    width: 187px;
+    height: 24px;
+}
+
+
+.axis path,
+.axis line {fill: none;stroke: rgb(89,89,89);shape-rendering: crispEdges;}
+	
+#calculator{
+    font-family: "ProximaNovaCondReg","Franklin Gothic", "ITC Franklin Gothic", Arial, sans-serif;
+    position:absolute;
+    left: 435px;
+    top: 101px;
+    font-size: 18px;
+    color: rgb(30,30,30);
+}
+
+#title {font-family: "ProximaNovaCondBold","Franklin Gothic Medium", "Franklin Gothic", "ITC Franklin Gothic", Arial, sans-serif;font-size: 23px;}
