@@ -2,6 +2,13 @@ library(tm)
 library(wordcloud)
 blackcount <- read.csv("blackcount.csv")
 whitecount <- read.csv("whitecount.csv")
+
+is_number <- grep("^\\d+$", blackcount$word)
+blackcount <- blackcount[-is_number,]
+
+is_number <- grep("^\\d+$", whitecount$word)
+whitecount <- whitecount[-is_number,]
+                         
 black_valuable <- subset(blackcount, ! word %in% stopwords())
 white_valuable <- subset(whitecount, ! word %in% stopwords())
 merged <- merge(black_valuable, white_valuable, by="word")
